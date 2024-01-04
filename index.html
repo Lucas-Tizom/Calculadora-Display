@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com botões</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="calculatorBody">
+        <div class="calculatorDisplay">
+            <input type="text" id="display" readonly>
+        </div>
+      
+        <div class="calculatorButtons">
+            <button onclick="limpar()">C</button>
+            <button onclick="erase()">←</button>
+            <button onclick="addCaractere('/')">/</button> 
+            <button onclick="addCaractere('*')">*</button><br>
+            <button onclick="addCaractere('7')">7</button> 
+            <button onclick="addCaractere('8')">8</button> 
+            <button onclick="addCaractere('9')">9</button>
+            <button onclick="addCaractere('-')">-</button> <br>
+            <button onclick="addCaractere('4')">4</button> 
+            <button onclick="addCaractere('5')">5</button>
+            <button onclick="addCaractere('6')">6</button> 
+            <button onclick="addCaractere('+')">+</button> <br>
+            <button onclick="addCaractere('1')">1</button>
+            <button onclick="addCaractere('2')">2</button> 
+            <button onclick="addCaractere('3')">3</button> 
+            <button onclick="addCaractere('**')">^</button> <br>
+            <button onclick="addCaractere('0')">0</button> 
+            <button onclick="addCaractere('00')">00</button> 
+            <button onclick="addCaractere('/100 *')">%</button> 
+            <button onclick="addCaractere('Math.sqrt(')">√</button>  <br>
+            <button onclick="addCaractere('.')">.</button>
+            <button onclick="addCaractere('(')">(</button>
+            <button onclick="addCaractere(')')">)</button> 
+            <button onclick="result()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
